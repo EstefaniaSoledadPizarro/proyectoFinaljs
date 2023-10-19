@@ -10,77 +10,86 @@
 </head>
 
 <body>
-    <h1>Conversor de divisas </h1>
-    <br>
-    <div>
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-                <a class="prestamos" href="./pages/conversor.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-                <a class="prestamos" href="../pages/prestamos.html">Prestamos</a>
-            </li>
-        </ul>
-    </div>
-    <br>
-    <div class="login-wrap">
-        <div class="login-html">
-            <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Iniciar
-                Sesión</label>
-            <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Registrarse</label>
-            <div class="login-form">
-                <div class="sign-in-htm">
-                    <div class="group">
-                        <label for="user" class="label">Usuario</label>
-                        <input id="user" type="text" class="input">
+    <header>
+        <div>
+            <h1>Conversor de divisas</h1>
+            <div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="prestamos" href="./pages/conversor.html">Conversor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="prestamos" href="./pages/prestamos.html">Prestamos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!--Formularios de registro y de ingreso-->
+    <main>
+        <br>
+        <div class="login-wrap">
+            <div class="login-html">
+                <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Iniciar
+                    Sesión</label>
+                <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2"
+                    class="tab">Registrarse</label>
+                <div class="login-form">
+                    <div class="sign-in-htm">
+                        <div class="group">
+                            <label for="user" class="label">Usuario</label>
+                            <input id="user" type="text" class="input">
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label">Contraseña</label>
+                            <input id="pass" type="password" class="input" data-type="password">
+                        </div>
+                        <div class="group">
+                            <input id="check" type="checkbox" class="check" checked>
+                            <label for="check"><span class="icon"></span> Mantenerme conectado</label>
+                        </div>
+                        <div class="group">
+                            <input type="submit" id="ingreso" class="button" value="Ingresar">
+                        </div>
+                        <div class="hr"></div>
+                        <div class="foot-lnk">
+                            <a href="#forgot">Olvidó su contraseña?</a>
+                        </div>
                     </div>
-                    <div class="group">
-                        <label for="pass" class="label">Contraseña</label>
-                        <input id="pass" type="password" class="input" data-type="password">
-                    </div>
-                    <div class="group">
-                        <input id="check" type="checkbox" class="check" checked>
-                        <label for="check"><span class="icon"></span> Mantenerme conectado</label>
-                    </div>
-                    <div class="group">
-                        <input type="submit" id="ingreso" class="button" value="Ingresar">
-                    </div>
-                    <div class="hr"></div>
-                    <div class="foot-lnk">
-                        <a href="#forgot">Olvidó su contraseña?</a>
-                    </div>
-                </div>
-                <div class="sign-up-htm">
-                    <div class="group">
-                        <label for="user" class="label">Usuario</label>
-                        <input id="userRegis" type="text" class="input">
-                    </div>
-                    <div class="group">
-                        <label for="pass" class="label">Contraseña</label>
-                        <input id="passRegis" type="password" class="input" data-type="password">
-                    </div>
-                    <div class="group">
-                        <label for="pass" class="label">Repetir contraseña</label>
-                        <input id="rePassRegis" type="password" class="input" data-type="password">
-                    </div>
-                    <div class="group">
-                        <label for="pass" class="label">Email</label>
-                        <input id="email" type="text" class="input">
-                    </div>
-                    <div class="group">
-                        <input type="submit" id="registro" class="button" value="Registrarse">
-                    </div>
-                    <div class="hr"></div>
-                    <div class="foot-lnk">
-                        <label for="tab-1">¿Ya estas registrado?</a>
+                    <div class="sign-up-htm">
+                        <div class="group">
+                            <label for="user" class="label">Usuario</label>
+                            <input id="userRegis" type="text" class="input">
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label">Contraseña</label>
+                            <input id="passRegis" type="password" class="input" data-type="password">
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label">Repetir contraseña</label>
+                            <input id="rePassRegis" type="password" class="input" data-type="password">
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label">Email</label>
+                            <input id="email" type="text" class="input">
+                        </div>
+                        <div class="group">
+                            <input type="submit" id="registro" class="button" value="Registrarse">
+                        </div>
+                        <div class="hr"></div>
+                        <div class="foot-lnk">
+                            <label for="tab-1">¿Ya estas registrado?</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div id="titulo"></div>
-
+        <div id="titulo"></div>
+    </main>
+    <footer>
+        <p>&copy; 2023 - EstefaniaPizarro </p>
+    </footer>
+    <!--enlace al script de index-->
     <script src="./index.js"></script>
 </body>
 

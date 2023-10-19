@@ -26,47 +26,44 @@
         </div>
     </header>
     <main>
+        <!--Formulario de calculo de prestamos-->
         <h2>Calculadora de Préstamos</h2>
         <form id="loan-form">
             <label for="monto">Monto a Pedir:</label>
             <input type="number" id="monto" required>
-
             <label for="banco">Selecciona un Banco:</label>
             <select id="banco" required>
                 <option value="Frances">Frances</option>
                 <option value="HSBC">HSBC</option>
                 <option value="Galicia">Galicia</option>
             </select>
-
             <label for="plazo">Selecciona el Plazo:</label>
             <select id="plazo" required>
                 <option value="6">6 meses</option>
                 <option value="12">12 meses</option>
                 <option value="24">24 meses</option>
             </select>
-
             <button type="submit">Calcular</button>
         </form>
         <form>
             <p id="resultado">La tasa de interés será de: </p>
             <button type="button" id="tomarPrestamo">Tomar prestamo</button>
         </form>
-
-
+        <!--Apis de googlemaps-->
         <div>
             <h4 class="mapa">Acercate a nuestra oficina ante cualquier consulta</h4>
             <div id="map"></div>
         </div>
-
     </main>
     <footer>
         <p>&copy; 2023 - EstefaniaPizarro </p>
     </footer>
+    <!--Enlaces a links de sweetatert, apis googlemaps, y js de prestamos y data-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="../js/login.js"></script>
     <script src="../js/prestamos.js"></script>
     <script src="../js/data.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
 </body>
 
 </html>

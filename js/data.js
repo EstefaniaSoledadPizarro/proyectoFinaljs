@@ -1,4 +1,4 @@
-const tasas = {
+ const tasas = {
     "Frances": {
         "6": 8.5,
         "12": 9.2,
