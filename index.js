@@ -59,12 +59,12 @@ function ingresar(){
         if((recuperoLocalS[0].usuario == usuario) && (recuperoLocalS[0].pass == contraseña)){
             document.getElementById('user').value = "";
             document.getElementById('pass').value="";
-            window.location.href = `./Pages/Tienda.html`
+            window.location.href = `./pages/conversor.html`
         }else{
-            alert('Vete intruso!')
+            alert('Incorrecto!')
         }
     }else{
-        alert('lo siento algo debe estar mal!')
+        alert('Lo siento algo debe estar mal!')
     }
     
 }
