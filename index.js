@@ -61,7 +61,7 @@ function ingresar(){
             document.getElementById('pass').value="";
             window.location.href = `./pages/conversor.html`
         }else{
-            alert('Incorrecto!')
+            alert('Tu contraseña debe ser mayor a 6 caracteres')
         }
     }else{
         alert('Lo siento algo debe estar mal!')
