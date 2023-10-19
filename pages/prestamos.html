@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Cambio de Divisas</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Conversor de monedas extranjeras</h1>
+            <img class="logo" id="arriba" src="../Resources/exchange.jpg" alt="exchange">
+            <div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="prestamos" href="../index.html">Ingresar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="prestamos" href="../pages/conversor.html">Inicio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h2>Calculadora de Préstamos</h2>
+        <form id="loan-form">
+            <label for="monto">Monto a Pedir:</label>
+            <input type="number" id="monto" required>
+
+            <label for="banco">Selecciona un Banco:</label>
+            <select id="banco" required>
+                <option value="Frances">Frances</option>
+                <option value="HSBC">HSBC</option>
+                <option value="Galicia">Galicia</option>
+            </select>
+
+            <label for="plazo">Selecciona el Plazo:</label>
+            <select id="plazo" required>
+                <option value="6">6 meses</option>
+                <option value="12">12 meses</option>
+                <option value="24">24 meses</option>
+            </select>
+
+            <button type="submit">Calcular</button>
+        </form>
+        <form>
+            <p id="resultado">La tasa de interés será de: </p>
+            <button type="button" id="tomarPrestamo">Tomar prestamo</button>
+        </form>
+
+
+        <div>
+            <h4 class="mapa">Acercate a nuestra oficina ante cualquier consulta</h4>
+            <div id="map"></div>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; 2023 - EstefaniaPizarro </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/prestamos.js"></script>
+    <script src="../js/data.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+</body>
+
+</html>

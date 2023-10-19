@@ -1,0 +1,121 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(56, 56, 56);
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: rgb(99, 97, 97);
+    padding: 20px;
+    text-align: center;
+}
+h1 {
+    color: rgb(76, 76, 231);
+}
+.logo {
+    width: 150px;
+    margin:10px;
+}
+.prestamos{
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;    
+}
+.nav-item{
+    list-style-type: none;
+    margin-left: 80px;
+}
+
+main {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+}
+h2 {
+text-align: center;
+}
+form {
+    background-color: rgb(68, 68, 68);
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+label, select, input, button {
+    display: block;
+    margin-bottom: 10px;
+}
+label {
+    color: rgb(77, 77, 207);
+}
+select, input {
+    width: 100%;
+    padding: 10px;
+    background-color: #666;
+    border: none;
+    color: rgb(255, 255, 255);
+}
+button {
+    background-color: rgb(0, 0, 255);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    margin:auto;
+}
+button:hover {
+    background-color: rgb(0, 0, 204);
+}
+#resultado {
+    margin-bottom: 35px;
+    padding: 10px;
+    background-color: rgb(68, 68, 68);
+    color: rgb(152, 152, 243);
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(51, 51, 51);
+}
+a {
+    color: rgb(219, 219, 241);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+#carrito{
+    margin-top: 20px;
+    background-color: rgb(99, 97, 97);
+    padding: 20px;
+    text-align: center;
+}
+h3 {
+    color: rgb(190, 190, 219);
+    margin: 10px;
+}
+#lista-compras{
+    color: rgb(255, 255, 255);
+    margin: 5px;
+}
+h4{
+    text-align: center;
+}
+#map {
+    margin: auto;
+	height: 300px;
+	width: 50vw;
+}
+.mapa {
+  color:  rgb(255, 255, 255);
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}

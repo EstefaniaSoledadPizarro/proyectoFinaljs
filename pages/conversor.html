@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Cambio de Divisas</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Conversor de monedas extranjeras</h1>
+            <img class="logo" id="arriba" src="../Resources/exchange.jpg" alt="exchange">
+            <div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="prestamos" href="../index.html">Ingresar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="prestamos" href="../pages/prestamos.html">Prestamos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h2>Calculadora de divisas</h2>
+        <form>
+            <label for="cantidad">Cantidad a Cambiar:</label>
+            <input type="number" id="cantidad" name="cantidad" required>
+            <label for="moneda-origen">Moneda de Origen:</label>
+            <select id="moneda-origen" name="moneda-origen" required>
+                <option value="eur">Euros (EUR)</option>
+                <option value="real">Reales (R)</option>
+                <option value="chilenos">Pesos chilenos (CH)</option>
+                <option value="libras">Libras esterlinas (GBP)</option>
+            </select>
+            <label for="moneda-destino">Moneda de Destino:</label>
+            <select id="moneda-destino" name="moneda-destino" required>
+                <option value="usd">Dólares (USD)</option>
+            </select>
+            <button type="submit" id="calcularButton">Calcular</button>
+        </form>
+        <form>
+            <div id="resultado">El valor es: </div>
+            <button type="button" id="add-carrito">Agregar operacion al Carrito</button>
+        </form>
+        <div id="carrito">
+            <h3>Tu lista de operaciones de cambio:</h3>
+            <ul id="lista-compras"> </ul>
+            <h3 id="resultado-final">Total:</h3>
+            <button id="vaciarCarrito">Vaciar Carrito</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 - EstefaniaPizarro </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/conversor.js"></script>
+</body>
+
+</html>
